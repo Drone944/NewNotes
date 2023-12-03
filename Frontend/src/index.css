@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../assets/woodback.jpg");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+}
+
+.dark-mode {
+  background-image: url("../assets/darklandback.jpg");
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.note-stay {
+  max-width: 20rem;
+  background-color: #fef68a;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-stay textarea {
+  border: none;
+  resize: none;
+  background-color: #fef68a;
+}
+
+.note-red {
+  max-width: 20rem;
+  background-color: red;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-red textarea {
+  border: none;
+  resize: none;
+  background-color: red;
+}
+
+.note-stay:hover {  flex-direction: column;
+  scale: 1.05;
+}
+
+.note-red:hover {
+  scale: 1.05;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new {
+  max-width: 20rem;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.new:hover {
+  scale: 1.05;
+}
+
+
+.new textarea {
+  border: none;
+  resize: none;
+  background-color: aquamarine;
+}
+
+textarea:focus {
+  outline: None;
+}
+
+.save {
+  background-color: rgb(211, 206, 206);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+  background-color: #6acdf7;
+  cursor: pointer;
+  scale: 1.15;
+}
+
+.delete-icon:hover {
+  scale: 1.15;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  border: none;
+  background-color: antiquewhite;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.deadline {
+  border: none;
+  background-color: aquamarine;
+}
+
+.deadline:focus {
+  outline: none;
+}
+
+.diffDates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-stay .newdeadline {
+  border: none;
+  background-color: #fef68a;
+}
+
+.note-stay .newdeadline:focus {
+  outline: none;
+}
+
+.note-red .newdeadline {
+  border: none;
+  background-color: red;
+}
+
+.note-red .newdeadline:focus {
+  outline: none;
+}
