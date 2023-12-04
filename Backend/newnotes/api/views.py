@@ -5,33 +5,6 @@ from rest_framework.decorators import api_view
 from .serializers import NoteSerializer
 
 @api_view(['GET'])
-def getRoutes(request):
-    
-    routes = [
-        {
-      'id': 'nanoid()',
-      'text': 'First note',
-      'date': '28/11/2023'
-    },
-    {
-      'id': 'nanoid()',
-      'text': '2nd note',
-      'date': '29/11/2023'
-    },
-    {
-      'id': 'nanoid()',
-      'text': '3rd note',
-      'date': '30/11/2023'
-    },
-    {
-      'id': 'nanoid()',
-      'text': '4th note',
-      'date': '3/11/2023'
-    },
-    ]
-    return Response(routes)
-
-@api_view(['GET'])
 def getNotes(request): 
     notes = Note.objects.all()
     serializer = NoteSerializer(notes, many=True)
